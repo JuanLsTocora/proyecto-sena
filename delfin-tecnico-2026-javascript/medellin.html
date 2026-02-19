@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medellín</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+             <li><a href="riohacha.html">Section 1</a></li>
+            <li><a href="cali.html">Section 2</a></li>
+            <li><a href="medellin.html">Medellín</a></li>
+            <li><a href="bogota.html">Section 4</a></li>
+            <li><a href="barranquilla.html">Section 5</a></li>
+        </ul>
+    </nav>
+
+    <main class="page">
+        <section class="sticky-section">
+            <h1>Medellín</h1>
+            <div class="card">
+                <img src="./img/medellín.jpg" alt="Medellín">
+                <button onclick="modal.showModal()">Ver más</button>
+            </div>
+            <dialog id="modal"><h3>Medellín </h3>
+                <p>
+                    Medellín es la segunda ciudad más grande de Colombia y la capital del departamento de Antioquia. Conocida como la "Ciudad de la Eterna Primavera" debido a su clima agradable durante todo el año, Medellín es un importante centro cultural, económico y turístico en Colombia. La ciudad ha experimentado una transformación significativa en las últimas décadas, pasando de ser una ciudad afectada por la violencia a convertirse en un ejemplo de innovación urbana y desarrollo sostenible.
+                </p>
+                <button onclick="modal.close()">Cerrar</button>
+            </dialog>
+            <p>Contenido de la página Medellín.</p>
+        </section>
+    </main>
+
+    <script src="./js/main.js"></script>
+    <script>
+        // Exponer el dialogo como `modal` para mantener compatibilidad con onclick inline
+        const _m = document.getElementById('modal');
+        if (_m) window.modal = _m;
+    </script>
+</body>
+</html>
