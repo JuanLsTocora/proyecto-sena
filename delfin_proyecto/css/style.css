@@ -1,18 +1,14 @@
 body{
-
-    background-image: url("/delfin_proyecto/img/fondo.jpg");
-    
-    background-size: cover;      /* ocupa toda la pantalla */
-    
-    background-position: center; /* centra la imagen */
-    
-    background-repeat: no-repeat; /* evita que se repita */
-    
-    background-attachment: fixed; /* efecto fijo al hacer scroll */
-    
     margin: 0;
-    
     font-family: Arial, sans-serif;
+}
+
+body.with-background {
+    background-image: url("/delfin_proyecto/img/fondo.jpg");
+    background-size: cover;      /* ocupa toda la pantalla */
+    background-position: center; /* centra la imagen */
+    background-repeat: no-repeat; /* evita que se repita */
+    background-attachment: fixed; /* efecto fijo al hacer scroll */
 }
 
 nav {
@@ -85,8 +81,9 @@ section:nth-child(5) {
     background: #e7e695c4;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
+    padding: 12px;
     width: 320px; /* Corregido el valor de width */
+    margin: 20px;
     text-align: justify;
     font-family: sans-serif;
     font-size: 1rem; /* Ajuste de tamaño de fuente */
