@@ -28,8 +28,6 @@
 
             <dialog id="modal">
                 <h3>Cali</h3>
-                <h1>THE BABY HORSE 🐎</h1>
-                <img src="./img/Angulo.jpeg" width="600" height="600" style="display : block; margin : 0 auto">
                 <p>
                     Cali es una ciudad colombiana ubicada en el departamento del Valle del Cauca, al suroeste de Bogotá. Es conocida por el baile de la salsa, del que hay muchos clubes en el suburbio de Juanchito.
                     En el barrio más antiguo de Cali, la catedral neoclásica de San Pedro alberga pinturas de la Escuela de Quito.
@@ -38,6 +36,46 @@
             </dialog>
         </section>
     </main>
+    
+<main class="page">
+    <section class="sticky-section">
+        <h1>Salsa Caleña</h1>
+        <div class="card">
+            <img src="./img/salsa.jpg" alt="Salsa Caleña">
+            <button onclick="modalSalsa.showModal()">Ver más</button>
+        </div>
+
+        <dialog id="modalSalsa">
+            <h3>Salsa Caleña</h3>
+            <p>
+                La salsa caleña es el ritmo que identifica a Cali en el mundo. Con un estilo único
+                caracterizado por pasos rápidos y trabajo de pies, nació en los barrios populares de la ciudad.
+                Cada año, el Festival Mundial de Salsa reúne a bailarines de todo el planeta en las calles de Cali.
+            </p>
+            <button onclick="modalSalsa.close()">Cerrar</button>
+        </dialog>
+    </section>
+</main>
+
+<main class="page">
+    <section class="sticky-section">
+        <h1>Feria de Cali</h1>
+        <div class="card">
+            <img src="./img/feria.jpg" alt="Feria de Cali">
+            <button onclick="modalFeria.showModal()">Ver más</button>
+        </div>
+
+        <dialog id="modalFeria">
+            <h3>Feria de Cali</h3>
+            <p>
+                La Feria de Cali es uno de los eventos más importantes de Colombia, celebrado cada año
+                del 25 al 30 de diciembre. Durante estos días, la ciudad se llena de música, desfiles,
+                conciertos y presentaciones de salsa que convierten a Cali en la capital mundial del ritmo.
+            </p>
+            <button onclick="modalFeria.close()">Cerrar</button>
+        </dialog>
+    </section>
+</main>
 
     <script src="./js/main.js"></script>
     <script>
