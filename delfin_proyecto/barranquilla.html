@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barranquilla</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="riohacha.html">Section1</a></li>
+            <li><a href="cali.html">Section 2</a></li>
+            <li><a href="medellin.html">Section 3</a></li>
+            <li><a href="bogota.html">Section 4</a></li>
+            <li><a href="barranquilla.html">Barranquilla</a></li>
+        </ul>
+    </nav>
+
+    <main class="page">
+        <section class="sticky-section">
+            <h1>Barranquilla</h1>
+            <div class="card">
+                <img src="./img/barranquilla.jpeg" alt="Barranquilla">
+                <button onclick="modal.showModal()">Ver más</button>
+            </div>
+
+            <dialog id="modal">
+                <h3>Barranquilla</h3>
+                <p>
+                    Barranquilla es una ciudad portuaria y capital del departamento de Atlántico en Colombia. Es la ciudad más poblada del país y una de las más importantes del Caribe colombiano. Se encuentra en la costa del mar Caribe, a 10 km de la desembocadura del río Magdalena.
+                    La ciudad es conocida por su rica cultura, especialmente por su música, danzas y tradiciones locales. Además, es un importante centro comercial y financiero de la región.
+                </p>
+                <button onclick="modal.close()">Cerrar</button>
+            </dialog>
+
+            <p>Barranquilla.</p>
+        </section>
+    </main>
+
+    <script src="./js/main.js"></script>
+    <script>
+        const _m = document.getElementById('modal');
+        if (_m) window.modal = _m;
+    </script>
+</body>
+</html>
